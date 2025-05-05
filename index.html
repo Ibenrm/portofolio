@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body style="background: linear-gradient(90deg, rgba(52,43,37,1) 0%, rgba(40,12,89,1) 38%, rgba(32,65,71,1) 100%);">
+
+    <!-- NAVBAR -->
+    <div class="navbars">
+        <div class="nav-left">
+            <div class="logos">
+                <img src="assets/logos.png" width="60px" height="60px">
+                <p><span id="title">Ibenrm01</span> <span id="subtitle">Portofolio</span></p>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="nav-link">
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact" class="contact-me">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- OPENING SECTION -->
+    <div class="opening" id="about">
+        <div class="left">
+            <h4>Hi I'm Iben Room Masud</h4>
+            <p>Saya memiliki passion besar di dunia IT, khususnya dalam web development dan pengembangan server untuk
+                Roblox. Saya senang mengulik teknologi, membangun sistem berbasis web, dan menciptakan pengalaman
+                interaktif di dalam membuat games. Selalu tertarik untuk belajar hal-hal baru di dunia digital!</p>
+            <a href="#">Contact Me!</a>
+        </div>
+        <div class="right">
+            <img src="assets/edited.png">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-link").classList.toggle("active");
+        }
+    </script>
+
+    <!-- SERVICE SECTION -->
+    <div class="services" id="services">
+        <div class="titles">
+            <h3>Terima Jasa</h3>
+            <p>Melayani beberapa jasa seperti berikut</p>
+        </div>
+        <div class="contents">
+            <div class="cards" id="fixbug">
+                <div class="title">
+                    <h4>Fix Bugs/Error</h4>
+                </div>
+                <div class="content">
+                    <p>
+                        <span class="desc">Menyediakan Layanan untuk memperbaiki bug atau error yang terjadi dalam
+                            aplikasi/website!</span>
+                        <span class="benefit">
+                            <i class="fa-solid fa-circle-check"></i> Pelayanan Ramah<br>
+                            <i class="fa-solid fa-circle-check"></i> Pengerjaan satset<br>
+                            <i class="fa-solid fa-circle-check"></i> Harga Terjangkau
+                        </span>
+                    </p>
+                    <div class="contact">
+                        <a href="#">Contact Me!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="landingpage">
+                <div class="title">
+                    <h4>Landing Pages</h4>
+                </div>
+                <div class="content">
+                    <p>
+                        <span class="desc">Menyediakan Layanan untuk membuat tampilan landing page website yang
+                            menarik!</span>
+                        <span class="benefit">
+                            <i class="fa-solid fa-circle-check"></i> Pelayanan Ramah<br>
+                            <i class="fa-solid fa-circle-check"></i> Pengerjaan satset<br>
+                            <i class="fa-solid fa-circle-check"></i> Terima Ide design<br>
+                            <i class="fa-solid fa-circle-check"></i> Terima revisi design<br>
+                            <i class="fa-solid fa-circle-check"></i> Harga Terjangkau
+                        </span>
+                    </p>
+                    <div class="contact">
+                        <a href="#">Contact Me!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="createdwebs">
+                <div class="title">
+                    <h4>Fullstack Website</h4>
+                </div>
+                <div class="content">
+                    <p>
+                        <span class="desc">Menyediakan Layanan untuk membuat aplikasi/website sesuai keinginan
+                            kalian!</span>
+                        <span class="benefit">
+                            <i class="fa-solid fa-circle-check"></i> Pelayanan Ramah<br>
+                            <i class="fa-solid fa-circle-check"></i> Pengerjaan satset<br>
+                            <i class="fa-solid fa-circle-check"></i> Terima Ide design/fitur<br>
+                            <i class="fa-solid fa-circle-check"></i> Terima revisi design/fitur<br>
+                        </span>
+                    </p>
+                    <div class="contact">
+                        <a href="#">Contact Me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <div class="titles">
+            <h3>Projects</h3>
+            <p>Berikut Project Coding yang telah saya buat</p>
+        </div>
+
+        <div class="center">
+            <div class="property-card">
+                <div class="property-image" style="background-image: url('assets/roomkuweb.png');">
+                </div>
+                <div class="property-description">
+                    <h5>RoomKu</h5>
+                    <p>Membuat Website Aplikasi Toko Online yang menjual berbagai item dalam game atau aplikasi premium
+                        lainnya seperti ItemKu dengan Payment Gateway Midtrans.</p>
+                </div>
+                <div class="property-social-icons"></div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image" style="background-image: url('assets/robloxstudio.png');">
+                </div>
+                <div class="property-description">
+                    <h5>Sword Mythic</h5>
+                    <p>Membuat Game SuperBeta khusus latihan bahasa Lua dan menerapkan beberapa backend yang cukup
+                        dalam.</p>
+                </div>
+                <div class="property-social-icons"></div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image" style="background-image: url('assets/wisudaweb.png');">
+                </div>
+                <div class="property-description">
+                    <h5>Wisuda Web (Contoh Gambar Hilang)</h5>
+                    <p>Membuat sistem absensi wisuda khusus sekolah sederhana yang terdiri HTML, CSS, JS, PHP beberapa
+                        data MySQL.</p>
+                </div>
+                <div class="property-social-icons"></div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image" style="background-image: url('assets/minecrush.png');"></div>
+                <div class="property-description">
+                    <h5>MineCrush</h5>
+                    <p>Membuat Server Minecraft Bedrock dengan framework PocketMine.</p>
+                </div>
+                <div class="property-social-icons"></div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image" style="background-image: url('assets/poggit.png');"></div>
+                <div class="property-description">
+                    <h5>Poggit Plugin Creators</h5>
+                    <p>Membuat Plugin Khusus Framework PocketMine dari sederhana hingga Expert dan memainkan analogi
+                        Expert.</p>
+                </div>
+                <div class="property-social-icons"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div class="skills" id="skills">
+        <div class="titles">
+            <h3>Skills</h3>
+            <p>Berikut Keahlian Saya dalam beberapa bahasa pemograman</p>
+        </div>
+        <section class="skills-container">
+            <div class="skills-wrapper">
+                <!-- Set pertama skill cards -->
+                <div class="skills-set">
+                    <div class="skill-card">
+                        <img src="assets/html.png" alt="HTML">
+                        <div class="skill-info">
+                            <h3>HTML</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 100%;">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/css.png" alt="CSS">
+                        <div class="skill-info">
+                            <h3>CSS</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/php.png" alt="PHP">
+                        <div class="skill-info">
+                            <h3>PHP Native</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 100%;">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/javascript.png" alt="JavaScript">
+                        <div class="skill-info">
+                            <h3>JavaScript Native</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 85%;">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/nodejs.png" alt="Node.js">
+                        <div class="skill-info">
+                            <h3>NodeJs Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 95%;">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/nextjs.png" alt="Next.js">
+                        <div class="skill-info">
+                            <h3>NextJs Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 30%;">30%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/laravel.png" alt="Laravel">
+                        <div class="skill-info">
+                            <h3>Laravel Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 60%;">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/typescript.png" alt="typescript">
+                        <div class="skill-info">
+                            <h3>TypeScript</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 70%;">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/tailwind.png" alt="tailwind">
+                        <div class="skill-info">
+                            <h3>TailWind Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 30%;">30%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/bootstrap.png" alt="bootstrap">
+                        <div class="skill-info">
+                            <h3>Bootstrap Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 60%;">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set kedua skill cards (untuk looping) -->
+                <div class="skills-set">
+                    <div class="skill-card">
+                        <img src="assets/html.png" alt="HTML">
+                        <div class="skill-info">
+                            <h3>HTML</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 100%;">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/css.png" alt="CSS">
+                        <div class="skill-info">
+                            <h3>CSS</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/php.png" alt="PHP">
+                        <div class="skill-info">
+                            <h3>PHP Native</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 100%;">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/javascript.png" alt="JavaScript">
+                        <div class="skill-info">
+                            <h3>JavaScript Native</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 85%;">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/nodejs.png" alt="Node.js">
+                        <div class="skill-info">
+                            <h3>NodeJs Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 95%;">95%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/nextjs.png" alt="Next.js">
+                        <div class="skill-info">
+                            <h3>NextJs Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 30%;">30%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/laravel.png" alt="Laravel">
+                        <div class="skill-info">
+                            <h3>Laravel Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 60%;">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/typescript.png" alt="typescript">
+                        <div class="skill-info">
+                            <h3>TypeScript</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 70%;">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/tailwind.png" alt="tailwind">
+                        <div class="skill-info">
+                            <h3>TailWind Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 30%;">30%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="assets/bootstrap.png" alt="bootstrap">
+                        <div class="skill-info">
+                            <h3>Bootstrap Framework</h3>
+                            <div class="skill-statistics">
+                                <div class="progress-bar" style="width: 60%;">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <div class="reviews" id="reviews">
+        <div class="titles">
+            <h3>Reviews</h3>
+            <p>Berikut beberapa ulasan tentang saya</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/quote.png" height="50" class="quote">
+                        <div class="content">
+                            <p class="text-dark">In my opinion, he is quite qualified
+                                in terms of coding, experience, and others.
+                                and As a teacher, he definitely supports his students.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="assets/male.png" class="img-swiper">
+                                </div>
+                                <h3>Sir Ikhsan<br> <span>-someone famous</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/quote.png" height="50" class="quote">
+                        <div class="content">
+                            <p class="text-dark">Because I'm a design teacher, and I think the design for this
+                                portfolio is enough. he is also a new student. That's good.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="assets/male.png" class="img-swiper">
+                                </div>
+                                <h3>Sir Erwin<br> <span>-teacher</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/quote.png" height="50" class="quote">
+                        <div class="content">
+                            <p class="text-dark">I'm not someone who understands coding, but honestly, this portfolio
+                                looks really good. You can tell he put in a lot of effort and knows what he's doing.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="assets/female.png" class="img-swiper">
+                                </div>
+                                <h3>Maya <br> <span>-someone famous</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/quote.png" height="50" class="quote">
+                        <div class="content">
+                            <p class="text-dark">I'm not a tech person, but this portfolio really shows off his coding
+                                skills. From how the site looks to how it functions, it’s obvious he knows how to build
+                                something solid and professional.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="assets/female.png" class="img-swiper">
+                                </div>
+                                <h3>Angela <br> <span>-someone famous</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination-1"></div>
+        </div>
+    </div>
+    <!-- //REVIEWS -->
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <div class="titles">
+            <h3>Contact Me</h3>
+            <p>Jika ingin menghubungin saya, silakan isi form dibawah ini </p>
+        </div>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://www.youtube.com/@ibenrm0185"><ion-icon name="logo-youtube"></ion-icon></a></li>
+
+            <li><a href="https://www.instagram.com/ibenroom/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <p>©2024 Ibenrm | All Rights Reserverd.</p>
+    </footer>
+    <script src="framework/swipper/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        var swiperss = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            speed: 600,
+            spaceBetween: 42,
+            slidesPerView: 3, // Ubah dari 'auto'
+            initialSlide: 1,
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 59.5,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination-1",
+                clickable: true,
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                480: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
