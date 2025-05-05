@@ -522,7 +522,7 @@ a {
 }
 @media screen and (max-width: 768px) {
     .skill-statistics {
-        width: 20vh;
+        width: 15vh;
     }
 }
 @media screen and (max-width: 250px) {
