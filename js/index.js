@@ -12,12 +12,21 @@ window.addEventListener("DOMContentLoaded", () => {
         const animateProgressBar = () => {
             if (currentWidth < targetWidth) {
                 currentWidth++;
-                bar.style.width = currentWidth + '%';  // Mengatur lebar progress bar
-                bar.innerText = currentWidth + '%';    // Menampilkan persentase di dalam progress bar
+                bar.style.width = currentWidth + '%'; 
+                bar.innerText = currentWidth + '%';    
             }
         };
-
-        // Menggunakan setInterval untuk membuat animasi progres
-        const interval = setInterval(animateProgressBar, 20); // Kecepatan animasi: 20ms per persen
+        const interval = setInterval(animateProgressBar, 10); 
     });
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+    
+        const url = `https://wa.me/6289653540468?text=Halo,%20Nama%20saya%20${encodeURIComponent(name)}%0A%0AEmail%20:%20${encodeURIComponent(email)}%0APesan%20:%20${encodeURIComponent(message)}`;
+        
+        window.location.href = url;
+    });    
 });

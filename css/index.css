@@ -12,6 +12,10 @@ a {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVBAR */
 .navbars {
     display: flex;
@@ -684,7 +688,7 @@ a {
     align-items: center;
     color: white;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 .contact h3 {
     font-size: 28px;

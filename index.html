@@ -41,8 +41,8 @@
     <!-- OPENING SECTION -->
     <div class="opening" id="about">
         <div class="left">
-            <h4>Hi I'm Iben Room Masud</h4>
-            <p>Saya memiliki passion besar di dunia IT, khususnya dalam web development dan pengembangan server untuk
+            <h4 class="animate__animated animate__bounceInLeft">Hi I'm Iben Room Masud</h4>
+            <p class="animate__animated animate__bounceInLeft">Saya memiliki passion besar di dunia IT, khususnya dalam web development dan pengembangan server untuk
                 Game Online. Saya senang mengulik teknologi, membangun sistem berbasis web, dan menciptakan pengalaman
                 interaktif di dalam membuat games. Selalu tertarik untuk belajar hal-hal baru di dunia digital!</p>
             <a href="#">Contact Me!</a>
@@ -64,8 +64,8 @@
             <h3>Terima Jasa</h3>
             <p>Melayani beberapa jasa seperti berikut</p>
         </div>
-        <div class="contents">
-            <div class="cards" id="fixbug">
+        <div class="contents" >
+            <div class="cards animate__animated animate__bounceIn" style="animation-timeline: view(); animation-range: entry 10% cover 40%;" id="fixbug">
                 <div class="title">
                     <h4>Fix Bugs/Error</h4>
                 </div>
@@ -80,11 +80,11 @@
                         </span>
                     </p>
                     <div class="contact">
-                        <a href="#">Contact Me!</a>
+                        <a href="#contact">Contact Me!</a>
                     </div>
                 </div>
             </div>
-            <div class="cards" id="landingpage">
+            <div class="cards animate__animated animate__bounceIn" style="animation-timeline: view(); animation-range: entry 10% cover 40%;" id="landingpage">
                 <div class="title">
                     <h4>Landing Pages</h4>
                 </div>
@@ -101,11 +101,11 @@
                         </span>
                     </p>
                     <div class="contact">
-                        <a href="#">Contact Me!</a>
+                        <a href="#contact">Contact Me!</a>
                     </div>
                 </div>
             </div>
-            <div class="cards" id="createdwebs">
+            <div class="cards animate__animated animate__bounceIn" style="animation-timeline: view(); animation-range: entry 10% cover 40%;" id="createdwebs">
                 <div class="title">
                     <h4>Fullstack Website</h4>
                 </div>
@@ -121,7 +121,7 @@
                         </span>
                     </p>
                     <div class="contact">
-                        <a href="#">Contact Me!</a>
+                        <a href="#contact">Contact Me!</a>
                     </div>
                 </div>
             </div>
@@ -496,7 +496,7 @@
                     <input type="text" name="name" placeholder="Your Name" required />
                     <input type="email" name="email" placeholder="Your Email" required />
                     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" id="buttonSendMsg">Send Message</button>
                 </form>
             </div>
         </section>
@@ -526,7 +526,7 @@
     </footer>
     <script src="framework/swipper/node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js?v=2"></script>
     <script>
         var swiperss = new Swiper(".mySwiper", {
             effect: "coverflow",
